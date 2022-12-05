@@ -3,5 +3,139 @@
   <head>
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <form action="https://formspree.io/f/xdojqewp" method="POST">
+      <fieldset>
+        <legend>Personal Info</legend>
+        <label for="name">Name</label>
+        <input name="name" id="name" type="text" />
+
+        <label for="surname">Surname</label>
+        <input name="surname" id="surname" type="text" /><br />
+
+        <label for="email">Email</label>
+        <input name="" id="email" type="email" /><br />
+
+        <label for="dob">Date of birth</label>
+        <input name="dob" id="dob" type="date" /><br />
+
+        <label for="country">Country</label>
+        <select name="country" id="country">
+          <option value="Israel">Israel</option>
+          <option value="England">England</option>
+          <option value="Spain">Spain</option>
+          <option value="USA">USA</option>
+          <option value="Brazil">Brazil</option>
+        </select>
+      </fieldset>
+      <br />
+
+      <fieldset>
+        <legend>Gender</legend>
+        <input name="gender" id="male" type="radio" value="Male" />
+        <label for="male">Male</label>
+        <input name="gender" id="female" type="radio" value="female" />
+        <label for="female">Female</label><br />
+      </fieldset>
+      <br />
+
+      <fieldset>
+        <legend>Personal Info</legend>
+
+        <label for="profile-image">Profile Image</label>
+        <input
+          type="file"
+          name="profile-image"
+          id="profile-image"
+          accept=".png, .jpg, .jpeg"
+        /><br />
+
+        <label for="nick-name">Nick Name</label>
+        <input type="text" name="nick-name" id="nick-name" /><br />
+
+        <label for="favorite-color">Favorite color</label>
+        <input type="color" name="favorite-color" id="favorite-color" />
+
+        <label for="password">password</label>
+        <input type="password" name="password" id="password" /><br />
+        <br />
+
+        <label for="bio">Bio</label><br />
+        <textarea name="bio" id="bio" cols="20" rows="5"></textarea>
+      </fieldset>
+      <br />
+
+      <fieldset>
+        <legend>Favorite animals</legend>
+        <input type="checkbox" name="favorite-animals" value="Dogs" id="dogs" />
+        <label for="f">Dogs</label>
+
+        <input type="checkbox" name="favorite-animals" value="Cats" id="cats" />
+        <label for="cats">Cats</label>
+
+        <input
+          type="checkbox"
+          name="favorite-animals"
+          value="Camels"
+          id="camels"
+        />
+        <label for="camels">Camels</label>
+
+        <input
+          type="checkbox"
+          name="favorite-animals"
+          value="Hamsters"
+          id="hamsters"
+        />
+        <label for="hamsters">Hamsters</label>
+
+        <input
+          type="checkbox"
+          name="favorite-animals"
+          value="Unicorns"
+          id="unicorns"
+        />
+        <label for="unicorns">Unicorns</label>
+      </fieldset>
+      <br />
+
+      <fieldset>
+        <legend>Very personal Questions</legend>
+        <label for="how-tall">How tall are you?(cm)</label>
+        <input type="number" name="how-tall" id="how-tall" /><br />
+
+        <label for="how-happy">How happy are you?(0-10)</label>
+        <input
+          type="range"
+          name="how-happy"
+          id="how-happy"
+          min="0"
+          max="10"
+          value="5"
+        />
+      </fieldset>
+
+      <input type="reset" /><br />
+      <input type="submit" />
+    </form>
+  </body>
 </html>
+<!-- 1. create a new project and open in vscode
+2. create a form which the user can submit to formspree
+
+	Personal Info
+	Name, Surname, Email, Date of Birth, Gender, Country
+
+	Profile
+	Image, Nick Name, Favorite Color, Password, Bio
+
+	Favorite Animals (multi)
+	Dogs, Cats, Camels, Hamster, Unicorn
+
+	Very Peaky Questions
+	How tall are you (cm), How Happy are you?
+
+	Actions
+	Submit, Reset
+	
+3. Upload to github pages -->
